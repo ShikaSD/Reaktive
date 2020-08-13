@@ -1,0 +1,21 @@
+plugins {
+    id 'mpp-configuration'
+}
+
+kotlin {
+    jvm()
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation project(':reaktive')
+            }
+        }
+
+        jvmMain {
+            dependencies {
+                implementation project(':reaktive')
+            }
+        }
+    }
+}
